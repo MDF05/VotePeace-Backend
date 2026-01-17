@@ -34,7 +34,7 @@ class AuthService {
       nik: dto.nik,
       name: dto.name,
       password: hashedPassword,
-      role: "USER" 
+      role: "USER"
     });
 
     const { password, ...userWithoutPassword } = user;
@@ -42,4 +42,6 @@ class AuthService {
   }
 }
 
+
+// Trigger restart
 export default new AuthService();
